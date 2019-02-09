@@ -1,6 +1,7 @@
 package jp.co.tis.tiscon4.form;
 
 import nablarch.core.validation.ee.Domain;
+import nablarch.core.validation.ee.Required;
 
 import java.io.Serializable;
 
@@ -9,22 +10,27 @@ public class JobForm implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /** 勤務先 */
+    @Required
     @Domain("employerName")
     private String employerName;
 
     /** 勤務先郵便番号 */
+    @Required
     @Domain("employerZipCode")
     private String employerZipCode;
 
     /** 勤務先住所 */
+    @Required
     @Domain("employerAddress")
     private String employerAddress;
 
     /** 勤務先電話番号 */
+    @Required
     @Domain("employerPhoneNumber")
     private String employerPhoneNumber;
 
     /** 業種 */
+    @Required
     @Domain("industryType")
     private String industryType;
 
