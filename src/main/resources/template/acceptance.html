@@ -64,6 +64,7 @@
                             <input type="checkbox" name="acceptance" th:value="1"/>
                             <label>全ての加入条件を満たしていることを確認しました。</label>
                         </div>
+                        <input type="hidden" name="insuranceType" th:value="${insOrder.insuranceType}" />
 
                         <button class="ui fluid teal button">次へ（個人情報の入力）</button>
                     </form>

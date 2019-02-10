@@ -29,8 +29,7 @@ public class UserForm implements Serializable {
     private String alphabetName;
 
     /** 性別 */
-    @Required
-    @Domain("gender")
+
     private String gender;
 
     /** 生年月日 */
@@ -123,7 +122,13 @@ public class UserForm implements Serializable {
         this.dateOfBirth = dateOfBirth;
     }
 
+    /** 性別 */
+    @Required
+    @Domain("gender")
     public String getGender() {
+        if (gender == null) {
+            return "female";
+        }
         return gender;
     }
 

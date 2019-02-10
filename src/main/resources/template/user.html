@@ -82,7 +82,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr th:if="${!insOrder.insuranceType.equals('treatLady')}">
                                 <td>
                                     <label>性別</label>
                                     <p style="color:red;">＊</p>
