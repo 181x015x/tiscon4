@@ -34,9 +34,38 @@ public class UserForm implements Serializable {
     private String gender;
 
     /** 生年月日 */
-    @Required
-    @Domain("dateOfBirth")
+
     private String dateOfBirth;
+
+    private String year;
+
+    private String month;
+
+    private String day;
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public void setMonth(String month) {
+        this.month = month;
+    }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
 
     /** 郵便番号 */
     @Required
@@ -115,8 +144,10 @@ public class UserForm implements Serializable {
         this.alphabetName = alphabetName;
     }
 
+    @Required
+    @Domain("dateOfBirth")
     public String getDateOfBirth() {
-        return dateOfBirth;
+        return year + "/" + month + "/" + day;
     }
 
     public void setDateOfBirth(String dateOfBirth) {

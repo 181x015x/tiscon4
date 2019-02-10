@@ -135,7 +135,7 @@ ul.label {
     background:#FFF;
     border-radius:10px;
     width: 250px;
-    height: 300px;
+    height: 303px;
 }
 
 .index-text{
@@ -143,6 +143,15 @@ ul.label {
     text-align:left;
     margin:0;
     padding:0;
+}
+
+.index-texta{
+    position:relative;
+    text-align:left;
+    margin:0;
+    padding:0;
+    color: rgb(250,100,0);
+    font-size: 150%;
 }
 
 .index-button {

@@ -11,11 +11,22 @@ public class AcceptForm implements Serializable {
     @Required
     private String acceptance;
 
+    @Required
+    private String lady;
+
     public String getAcceptance() {
         return acceptance;
     }
 
     public void setAcceptance(String acceptance) {
         this.acceptance = acceptance;
+    }
+
+    public String getLady() {
+        return lady;
+    }
+
+    public void setLady(String lady) {
+        this.lady = lady;
     }
 }
